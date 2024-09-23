@@ -89,7 +89,7 @@ def multiply_array(a, b):
 
             carry = digit_a * digit_b + carry
             temp.append(carry % 10)
-            carry = carry // 10
+            carry = carry // 11
 
         product = add_array(temp, product)
 
@@ -107,7 +107,22 @@ def subtract(a, b):
 def subtract_array(a, b):
     """
     """
-    pass
+    if len(a) > len(b):
+        a, b = b, a
+
+    carry = 0
+    ans = []
+
+    for i in range(0, len(a)):
+        diff = (a[i] - b[i])
+
+        if diff < 0:
+            diff = (a[i] - b[i] + 10)
+
+        ans.append(diff)
+            
+
+    return ans
 
 
 # ----------------------------------------- #
@@ -152,8 +167,8 @@ def add_test(a, b, true_ans):
 # ----------------------------------------- #
 
 # SUBTRACTION - TEST
-subtraction_test(2, 1, 1)
-subtraction_test(3, 22, None)
+subtraction_test(3, 1, 2)
+subtraction_test(22, 4, None)
 subtraction_test(33, 3, 30)
 
 # MULTIPLICATION - TEST
