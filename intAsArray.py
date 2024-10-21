@@ -22,8 +22,14 @@ def split_digits_reversed(number):
 
 def array_to_int(ansArray):
     """
-    Un-reverses the array that represents a number and returns the number as an
+    Un-reverses the array that represents a number and returns the number as
         an int.
+    
+    Args
+        takes a reversed int array 
+
+    Return
+        int:
     """
     ans = ""
     for char in reversed(ansArray):
@@ -34,6 +40,14 @@ def array_to_int(ansArray):
 
 def add(a,b):
     """
+    Wrapper for add_array
+
+    Args
+        A: int
+        B: int
+
+    Return
+        Int: number
     """
     a = split_digits_reversed(a)
     b = split_digits_reversed(b)
@@ -42,6 +56,14 @@ def add(a,b):
 
 def add_array(a, b):
     """
+    takes two arrays containing a number (can be thousands of digits) and add them.
+
+    Args
+        A: int[]
+        B: int[]
+
+    Return
+        int[]: An array answer
     """
     if len(a) > len(b):
         a, b = b, a
@@ -67,6 +89,14 @@ def add_array(a, b):
 
 def multiply(a, b):
     """
+    Wrapper for multiply_array
+
+    Args
+        A: int
+        B: int
+
+    Return
+        Int: number
     """
     a = split_digits_reversed(a)
     b = split_digits_reversed(b)
@@ -75,6 +105,15 @@ def multiply(a, b):
 
 def multiply_array(a, b):
     """
+    takes two arrays containing a number (can be thousands of digits) and multiply 
+        them.
+
+    Args
+        A: int[]
+        B: int[]
+
+    Return
+        int[]: An array answer
     """
     product = []
     carry = 0
@@ -98,6 +137,14 @@ def multiply_array(a, b):
 
 def subtract(a, b):
     """
+    Wrapper for subtract_array
+
+    Args
+        A: int
+        B: int
+
+    Return
+        Int: number
     """
     a = split_digits_reversed(a)
     b = split_digits_reversed(b)
@@ -106,6 +153,15 @@ def subtract(a, b):
 
 def subtract_array(a, b):
     """
+    takes two arrays containing a number (can be thousands of digits) and subtract
+        them.
+
+    Args
+        A: int[]
+        B: int[]
+
+    Return
+        int[]: An array answer
     """
     if len(a) > len(b):
         a, b = b, a
