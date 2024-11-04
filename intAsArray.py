@@ -163,6 +163,8 @@ def subtract_array(a, b):
     Return
         int[]: An array answer
     """
+    # TODO: this is all addition logic so far...
+
     if len(a) > len(b):
         a, b = b, a
 
@@ -182,7 +184,7 @@ def subtract_array(a, b):
 
 
 # ----------------------------------------- #
-#           TESTING Functions               #
+#           TESTING Functions                    #
 # ----------------------------------------- #
 
 def subtraction_test(a, b, true_ans):
