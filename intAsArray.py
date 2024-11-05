@@ -3,14 +3,14 @@ def split_digits_reversed(number):
     """
     -- From chat google bard
     Splits a multi-digit integer into its individual digits in reverse order.
-    
+
     Args:
         number: The integer to split.
-    
+
     Returns:
         A list of integers representing the individual digits in reverse order.
     """
-    
+
     digits = []
     while number > 0:
         digit = number % 10
@@ -24,9 +24,9 @@ def array_to_int(ansArray):
     """
     Un-reverses the array that represents a number and returns the number as
         an int.
-    
+
     Args
-        takes a reversed int array 
+        takes a reversed int array
 
     Return
         int:
@@ -34,7 +34,7 @@ def array_to_int(ansArray):
     ans = ""
     for char in reversed(ansArray):
         ans += str(char)
-    
+
     return int(ans)
 
 
@@ -105,7 +105,7 @@ def multiply(a, b):
 
 def multiply_array(a, b):
     """
-    takes two arrays containing a number (can be thousands of digits) and multiply 
+    takes two arrays containing a number (can be thousands of digits) and multiply
         them.
 
     Args
@@ -178,7 +178,7 @@ def subtract_array(a, b):
             diff = (a[i] - b[i] + 10)
 
         ans.append(diff)
-            
+
 
     return ans
 
@@ -193,7 +193,7 @@ def subtraction_test(a, b, true_ans):
     ans = subtract(a, b)
 
     print()
-    print(a, "-", b, "=") 
+    print(a, "-", b, "=")
     print(true_ans, "==", ans)
     print(true_ans == ans)
 
@@ -204,7 +204,7 @@ def multiply_test(a, b, true_ans):
     ans = multiply(a, b)
 
     print()
-    print(a, "*", b, "=") 
+    print(a, "*", b, "=")
     print(true_ans, "==", ans)
     print(true_ans == ans)
 
@@ -215,8 +215,8 @@ def add_test(a, b, true_ans):
     ans = add(a, b)
 
     print()
-    print(a, "+", b, "=") 
-    print(true_ans, "==", ans) 
+    print(a, "+", b, "=")
+    print(true_ans, "==", ans)
     print(true_ans == ans)
 
 
