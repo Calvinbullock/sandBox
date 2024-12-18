@@ -193,9 +193,9 @@ def subtraction_test(a, b, true_ans):
     ans = subtract(a, b)
 
     print()
-    print(a, "-", b, "=")
-    print(true_ans, "==", ans)
-    print(true_ans == ans)
+    print(a, "-", b, "=", true_ans)
+    print("ans = ", ans, end=" --")
+    print(" ✔️ " if true_ans == ans else " ❗")
 
 
 def multiply_test(a, b, true_ans):
@@ -206,7 +206,7 @@ def multiply_test(a, b, true_ans):
     print()
     print(a, "*", b, "=")
     print(true_ans, "==", ans)
-    print(true_ans == ans)
+    print(" ✔️ " if true_ans == ans else " ❗")
 
 
 def add_test(a, b, true_ans):
@@ -217,7 +217,7 @@ def add_test(a, b, true_ans):
     print()
     print(a, "+", b, "=")
     print(true_ans, "==", ans)
-    print(true_ans == ans)
+    print(" ✔️ " if true_ans == ans else " ❗")
 
 
 # ----------------------------------------- #
@@ -226,12 +226,13 @@ def add_test(a, b, true_ans):
 
 # SUBTRACTION - TEST
 subtraction_test(3, 1, 2)
-subtraction_test(22, 4, None)
+subtraction_test(22, 4, 18)
 subtraction_test(33, 3, 30)
 
 # MULTIPLICATION - TEST
 # multiply_test(1, 2, 2)
 # multiply_test(22, 22, 484)
+# multiply_test(20000000000000000000000000000000000, 20000000000000000000000000000000000, 400000000000000000000000000000000000000000000000000000000000000000000)
 
 # ADDING - TEST
 # add_test(1, 3, 4)
