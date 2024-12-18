@@ -2,13 +2,15 @@
 def split_digits_reversed(number):
     """
     -- From chat google bard
-    Splits a multi-digit integer into its individual digits in reverse order.
+    Splits a multi-digit integer into its individual digits in reverse
+        order.
 
     Args:
         number: The integer to split.
 
     Returns:
-        A list of integers representing the individual digits in reverse order.
+        A list of integers representing the individual digits in
+            reverse order.
     """
 
     digits = []
@@ -22,8 +24,8 @@ def split_digits_reversed(number):
 
 def array_to_int(ansArray):
     """
-    Un-reverses the array that represents a number and returns the number as
-        an int.
+    Un-reverses the array that represents a number and returns
+        the number as an int.
 
     Args
         takes a reversed int array
@@ -56,7 +58,8 @@ def add(a,b):
 
 def add_array(a, b):
     """
-    takes two arrays containing a number (can be thousands of digits) and add them.
+    takes two arrays containing a number (can be thousands of digits)
+        and adds them.
 
     Args
         A: int[]
@@ -105,8 +108,8 @@ def multiply(a, b):
 
 def multiply_array(a, b):
     """
-    takes two arrays containing a number (can be thousands of digits) and multiply
-        them.
+    takes two arrays containing a number (can be thousands of digits)
+        and multiply them.
 
     Args
         A: int[]
@@ -153,8 +156,8 @@ def subtract(a, b):
 
 def subtract_array(a, b):
     """
-    takes two arrays containing a number (can be thousands of digits) and subtract
-        them.
+    takes two arrays containing a number (can be thousands of digits)
+        and subtracts them.
 
     Args
         A: int[]
