@@ -2,11 +2,11 @@
 
 ## What I Have Done
 - int as arrays -- intAsArray.py
-    - adding
-    - multiplying
-    - subtracting -- in progress
+    - adding        - DONE
+    - multiplying   - DONE
+    - subtracting   - DONE
     - division -- in progress
-    - exsponent -- in progress
+    - exponent -- in progress
 
 ## In Progress
 - sorting (stable or not)
